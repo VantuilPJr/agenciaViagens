@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orçamento de Viagem</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/png" href="image/icone.png">
+</head>
+<body>
+  <header>
+    <nav>
+        <div class="marca">
+            <img src="image/logo.png" alt="Logo Voilà Voyages" class="logo"> 
+        </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="promocoes.html ">Pacotes em Promoção</a></li>
+        <li><a href="orcamentos.html">Orçamento</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="orcamento">
+      <h2>Solicite um Orçamento</h2>
+      <form action="#" method="post">
+        <div class="form-group">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">Telefone:</label>
+          <input type="tel" id="telefone" name="telefone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="origem">Cidade de Origem:</label>
+          <input type="text" id="origem" name="origem" required>
+        </div>
+
+        <div class="form-group">
+          <label for="destino">Cidade de Destino:</label>
+          <input type="text" id="destino" name="destino" required>
+        </div>
+
+        <div class="form-group">
+          <label for="viajantes">Número de Viajantes:</label>
+          <input type="number" id="viajantes" name="viajantes" required>
+        </div>
+
+        <div class="form-group">
+          <label for="ida">Data de Ida:</label>
+          <input type="date" id="ida" name="ida" required>
+        </div>
+
+        <div class="form-group">
+          <label for="volta">Data de Volta:</label>
+          <input type="date" id="volta" name="volta" required>
+        </div>
+
+        <div class="form-group">
+          <label for="obs">Observações Gerais:</label>
+          <textarea id="obs" name="obs" rows="4"></textarea>
+        </div>
+
+        <button type="submit"><i class="fab fa-whatsapp"></i> Enviar Orçamento</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Voilà Voyages | contato@voilàvoyages.com</p>
+    <div class="redes">
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">WhatsApp</a>
+    </div>
+  </footer>
+  <script>
+  const form = document.querySelector('form');
+
+  form.addEventListener('submit', function (event) {
+    event.preventDefault(); 
+    alert('Orçamento enviado com sucesso! Entraremos em contato pelo WhatsApp.');
+    form.reset();
+  });
+</script>
+
+</body>
+</html>
